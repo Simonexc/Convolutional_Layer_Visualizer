@@ -1,2 +1,2 @@
-# Convolutional_Layer_Visualizer
+# Convolutional Layer Visualizer
 Modifies an image based on the kernel
