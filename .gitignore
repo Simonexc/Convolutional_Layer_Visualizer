@@ -210,3 +210,8 @@ dmypy.json
 .pyre/
 
 # End of https://www.gitignore.io/api/python,pycharm,jupyternotebooks
+.idea/Convolutional_Layer_Visualizer.iml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml

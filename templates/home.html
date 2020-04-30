@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+{% if image_name %}
+    <img class="absolute" src=" {{url_for('send_image', filename=image_name)}} " style="max-height: 350px;">
+{% else %}
+    <img class="absolute" src="/static/images/Darth Vader.jpg" style="max-height: 350px;">
+{% endif %}
+<div style="height: 10%; width: 100px;"></div>
+<p style="font-size: 45px;">Choose an image to modify</p>
+<form onsubmit="return fileValidation()" action="/" method="POST" enctype="multipart/form-data">
+    <label for="file" class="absolute" id="fileName">Choose an Image</label>
+    <input type="file" name="file" id="file" style="display: none;" onchange="return fileValidation()">
+    <input type="submit" value="Upload" class="absolute" id="button">
+</form>
+{% endblock %}
